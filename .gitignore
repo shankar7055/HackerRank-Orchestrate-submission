@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment / secrets — never commit these
+.env
+*.env
+.env.*
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Submission artifacts (built files, not source)
+submission/
+
+# Virtualenvs
+venv/
+.venv/
+env/
+
+# Kiro IDE
+.kiro/

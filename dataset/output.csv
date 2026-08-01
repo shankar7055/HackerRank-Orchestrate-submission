@@ -1,111 +1,111 @@
 message_id,action,message_type,reason,confidence,evidence_message_ids
-msg_023,,,,,
-msg_091,,,,,
-msg_090,,,,,
-msg_048,,,,,
-msg_040,,,,,
-msg_075,,,,,
-msg_005,,,,,
-msg_104,,,,,
-msg_069,,,,,
-msg_107,,,,,
-msg_070,,,,,
-msg_003,,,,,
-msg_099,,,,,
-msg_008,,,,,
-msg_092,,,,,
-msg_060,,,,,
-msg_004,,,,,
-msg_030,,,,,
-msg_045,,,,,
-msg_052,,,,,
-msg_009,,,,,
-msg_071,,,,,
-msg_016,,,,,
-msg_065,,,,,
-msg_038,,,,,
-msg_086,,,,,
-msg_014,,,,,
-msg_094,,,,,
-msg_029,,,,,
-msg_105,,,,,
-msg_002,,,,,
-msg_010,,,,,
-msg_078,,,,,
-msg_013,,,,,
-msg_018,,,,,
-msg_044,,,,,
-msg_032,,,,,
-msg_106,,,,,
-msg_006,,,,,
-msg_109,,,,,
-msg_108,,,,,
-msg_019,,,,,
-msg_088,,,,,
-msg_056,,,,,
-msg_027,,,,,
-msg_050,,,,,
-msg_083,,,,,
-msg_063,,,,,
-msg_033,,,,,
-msg_061,,,,,
-msg_020,,,,,
-msg_017,,,,,
-msg_058,,,,,
-msg_026,,,,,
-msg_047,,,,,
-msg_046,,,,,
-msg_042,,,,,
-msg_079,,,,,
-msg_098,,,,,
-msg_037,,,,,
-msg_007,,,,,
-msg_085,,,,,
-msg_001,,,,,
-msg_021,,,,,
-msg_028,,,,,
-msg_012,,,,,
-msg_064,,,,,
-msg_103,,,,,
-msg_031,,,,,
-msg_057,,,,,
-msg_087,,,,,
-msg_067,,,,,
-msg_039,,,,,
-msg_082,,,,,
-msg_066,,,,,
-msg_049,,,,,
-msg_015,,,,,
-msg_051,,,,,
-msg_097,,,,,
-msg_089,,,,,
-msg_053,,,,,
-msg_059,,,,,
-msg_024,,,,,
-msg_072,,,,,
-msg_036,,,,,
-msg_076,,,,,
-msg_055,,,,,
-msg_102,,,,,
-msg_080,,,,,
-msg_093,,,,,
-msg_034,,,,,
-msg_035,,,,,
-msg_101,,,,,
-msg_041,,,,,
-msg_011,,,,,
-msg_110,,,,,
-msg_095,,,,,
-msg_074,,,,,
-msg_073,,,,,
-msg_054,,,,,
-msg_068,,,,,
-msg_100,,,,,
-msg_062,,,,,
-msg_096,,,,,
-msg_043,,,,,
-msg_077,,,,,
-msg_081,,,,,
-msg_025,,,,,
-msg_084,,,,,
-msg_022,,,,,
+msg_023,notify,payment,"The message is from a verified business and the user has an active order with the business, indicating a relevant and potentially important update.",0.78,message_0243;message_0102;message_0101
+msg_091,mute,spam,The message is identical to previously flagged spam messages with different payment links,0.78,message_0238;message_0090;message_0144
+msg_090,digest,personal,"The message is a personal inquiry with no urgency or direct mention, and the sender is not trusted, but it does not contain suspicious content",0.7,none
+msg_048,mute,scam,"The message contains a suspicious QR code payment request with a sense of urgency, similar to previously flagged messages",0.78,message_0151;message_0237;message_0152
+msg_040,mute,forward,High forward count (7) combined with chain-letter / blessing language — low-value forwarded content regardless of recipient's usual engagement.,0.93,none
+msg_075,notify,event,"The message is from a business the user has an active order with, indicating a relevant and potentially time-sensitive update.",0.7,none
+msg_005,notify,personal,"Sender trust and positive history with similar messages indicate a genuine personal transaction [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.73,message_0224;message_0065;message_0382
+msg_104,notify,personal,The message contains a personal and time-sensitive request for the user to collect an item by a specific deadline.,0.7,none
+msg_069,mute,forward,"The message is a repetitive, forwarded greeting with a request to share, indicating low value and potential spam.",0.78,message_0080;message_0123;message_0177
+msg_107,mute,scam,Message contains OTP/account-verification phishing language typical of credential-theft attempts.,0.95,none
+msg_070,mute,scam,Message contains OTP/account-verification phishing language typical of credential-theft attempts.,0.95,none
+msg_003,notify,business_update,The message is a business update from a verified business regarding an active order of the user,0.78,message_0400;message_0031;message_0061
+msg_099,notify,personal,Sender trust and positive history indicate a genuinely useful message,0.88,message_0227;message_0219
+msg_008,digest,business_update,"The message is a routine review request from a verified business with an active order, but lacks strong trust and direct mention signals",0.78,message_0296;message_0072;message_0071
+msg_092,digest,business_update,"The message is a routine business update from a verified business, but the sender is not trusted and there is no direct mention or urgent timing.",0.7,none
+msg_060,notify,urgent,"The message is from a trusted sender with a matching positive history and contains time-sensitive information about an internship approval deadline. [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.73,message_0284;message_0210;message_0176
+msg_004,notify,business_update,"The message is a business update from a verified business with which the user has an active order, indicating relevance and importance.",0.78,message_0246;message_0245;message_0005
+msg_030,mute,promotion,"The message is a repetitive sales promotion with a low sender trust and no direct mention of the user. [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.63,message_0113;message_0115;message_0335
+msg_045,notify,personal,"Sender trust and matching positive history indicate a genuine, time-sensitive delivery notification",0.88,message_0378;message_0384;message_0061
+msg_052,mute,spam,"The message exhibits suspicious patterns similar to previous potentially spam messages, such as message_0208 and message_0207, and the sender is not trusted and flagged as risky.",0.78,message_0208;message_0207;message_0159
+msg_009,digest,event,Sender trust and matching positive history outweigh the group mute,0.88,message_0074;message_0192
+msg_071,digest,personal,"Sender trust and positive history suggest a genuine, non-urgent personal message",0.88,message_0046;message_0359
+msg_016,mute,spam,"Message contains suspicious content with a sense of urgency and a link to a potentially phishing website, similar to previous messages",0.78,message_0024;message_0023;message_0045
+msg_065,digest,business_update,"The message is a routine business update with a limited shopping benefit, and the user has an active order with the business, but the sender is not trusted and the message is similar to previous ones. [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.63,message_0260;message_0261
+msg_038,mute,forward,High forward count (10) combined with chain-letter / blessing language — low-value forwarded content regardless of recipient's usual engagement.,0.93,none
+msg_086,notify,urgent,"The message contains a time-sensitive update about a personal appointment, overriding other signals due to its urgent nature and the user's active order with the business.",0.7,none
+msg_014,mute,promotion,The message is a repetitive promotion and the user has opted out of business messages from this sender.,0.78,message_0258;message_0018;message_0017
+msg_094,digest,promotion,"Business is verified and not flagged as risky, but sender trust is low and there's no direct mention or active order",0.7,none
+msg_029,mute,promotion,"The message is a repetitive sales promotion with a high forwarded count and similar historical messages [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.73,message_0113;message_0115;message_0095
+msg_105,mute,spam,"Message is a repetitive, forwarded health tip with a suspicious request to share urgently.",0.78,message_0373;message_0233;message_0079
+msg_002,notify,personal,Direct mention in a message from a trusted sender with a matching positive history,0.85,none
+msg_010,digest,business_update,"The message is a routine business update with a verified business sender and an active order, but lacks personalization and direct mention",0.78,message_0011;message_0242;message_0075
+msg_078,mute,scam,"Message contains suspicious content asking for sensitive bank details, consistent with historical evidence of similar phishing attempts",0.78,message_0199;message_0211;message_0385
+msg_013,mute,promotion,"The message is a repetitive, low-value promotion with no personalization or direct mention.",0.78,message_0114;message_0116
+msg_018,mute,spam,Message content matches known spam patterns and has a high forwarded count with no trusted sender or direct mention.,0.78,message_0026;message_0365;message_0213
+msg_044,mute,scam,Message contains OTP/account-verification phishing language typical of credential-theft attempts.,0.95,none
+msg_032,digest,event,Sender trust and matching positive history indicate a genuine request for academic resources,0.88,message_0119;message_0285
+msg_106,notify,event,"Sender trust and matching positive history indicate a genuine, time-sensitive update",0.8,none
+msg_006,notify,business_update,Sender trust and matching positive history indicate a genuine update,0.88,message_0097;message_0067;message_0029
+msg_109,notify,urgent,"The message contains a time-sensitive, administrative notice with a specific deadline from a trusted sender.",0.88,message_0151
+msg_108,mute,scam,Message contains OTP/account-verification phishing language typical of credential-theft attempts.,0.95,none
+msg_019,mute,business_update,"The message is from an untrusted sender with a risky business flag and similar content to previous messages, indicating potential spam.",0.78,message_0277
+msg_088,digest,business_update,"The message is a business update with a personal touch, but the sender is not trusted and the user has muted the group.",0.7,none
+msg_056,notify,personal,"The message contains a direct @mention and is from a trusted sender with a matching positive history, indicating a genuinely urgent and personal update.",0.85,none
+msg_027,mute,promotion,"The message is a repetitive, low-value promotion with no personalization or urgency, despite the user having an active order with the business. [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.63,message_0272;message_0033;message_0007
+msg_050,digest,business_update,"The message is a routine business update with no direct mention or urgent timing, despite the user having an active order with the business.",0.78,message_0279;message_0278
+msg_083,digest,business_update,Sender trust and matching positive history indicate a non-urgent but relevant business update.,0.88,message_0219
+msg_063,mute,scam,"The message contains a suspicious request for payment with a sense of urgency and a request to send a screenshot, similar to known scam patterns in evidence messages",0.78,message_0238;message_0271;message_0385
+msg_033,notify,personal,"Sender trust and positive history indicate a genuine, non-urgent personal message",0.88,message_0046;message_0197
+msg_061,mute,spam,"The message is a repetitive, forwarded chain message with no personal or urgent content.",0.78,message_0080;message_0123;message_0177
+msg_020,mute,spam,Message contains a suspicious link and resembles previous potentially spam messages,0.78,message_0025;message_0199;message_0238
+msg_017,mute,promotion,"The message is a repetitive, low-value payment request with no direct mention or trusted sender history.",0.78,message_0025;message_0361;message_0238
+msg_058,mute,spam,"Message is a forwarded, low-value, repetitive health tip with a suspicious call to action.",0.78,message_0016;message_0079;message_0131
+msg_026,mute,scam,The message contains a suspicious link and the sender is not trusted and has been flagged as risky,0.78,message_0032
+msg_047,notify,event,Sender trust and relevant positive history indicate a genuine update about lift maintenance,0.88,message_0001;message_0129;message_0057
+msg_046,mute,scam,Message contains OTP/account-verification phishing language typical of credential-theft attempts.,0.95,none
+msg_042,notify,urgent,The message contains a time-sensitive security alert that requires immediate attention from the user.,0.88,message_0216;message_0058;message_0130
+msg_079,mute,scam,Message contains OTP/account-verification phishing language typical of credential-theft attempts.,0.95,none
+msg_098,notify,urgent,"Sender trust and matching positive history indicate a genuinely urgent, personal message requiring immediate attention",0.8,none
+msg_037,notify,urgent,Sender trust and time-sensitive content override other factors,0.8,none
+msg_007,digest,event,"Sender trust and positive history signal a useful, non-urgent message",0.88,message_0008
+msg_085,mute,scam,The message is flagged as risky due to its content matching a known scam pattern and the sender is untrusted and unverified.,0.7,none
+msg_001,notify,urgent,Sender trust and time-sensitive content override other factors,0.88,message_0129;message_0057;message_0215
+msg_021,notify,payment,Sender trust and matching positive history indicate a legitimate payment reminder,0.88,message_0098;message_0068
+msg_028,mute,promotion,"The message is a repetitive marketing message from a sender with no trust and the user has opted out of business messages [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.63,message_0034
+msg_012,mute,spam,"Message is a forwarded chain message with a generic health claim and social pressure to share, indicating low value and potential spam.",0.78,message_0040;message_0016;message_0241
+msg_064,mute,scam,"Message requests sensitive information and has a similar pattern to known suspicious messages [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.63,message_0365;message_0213
+msg_103,notify,personal,"Sender trust and matching positive history indicate a genuine, time-sensitive personal message",0.88,message_0065;message_0224;message_0382
+msg_031,notify,business_update,"Sender trust and positive history indicate a relevant and important update [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.73,message_0304;message_0380;message_0397
+msg_057,notify,personal,Direct mention in a message from a trusted sender with a matching positive history,0.9,message_0059;message_0169;message_0117
+msg_087,mute,promotion,"The message is a promotional voice transcript about a new launch, and the user has muted the group with no direct mention or trusted sender",0.78,message_0223;message_0164
+msg_067,notify,payment,Sender trust and matching positive history indicate a genuine payment reminder,0.88,message_0098;message_0068;message_0029
+msg_039,notify,personal,Direct mention in a message from a trusted sender with a sense of urgency and relevance to the user's personal life,0.85,none
+msg_082,notify,urgent,Sender trust and content indicating a time-sensitive issue with live users,0.88,message_0218
+msg_066,mute,promotion,"The message is a repetitive, low-value promotion from an untrusted sender, despite the user having an active order with the business. [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.63,message_0257;message_0402
+msg_049,notify,event,"The message is a time-sensitive event related to the user's active order with the business [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.63,message_0154;message_0291;message_0153
+msg_015,mute,scam,Message contains OTP/account-verification phishing language typical of credential-theft attempts.,0.95,none
+msg_051,mute,promotion,"The message is a repetitive, low-value promotion from an untrusted sender, despite the user having an active order with the business.",0.78,message_0257;message_0402
+msg_097,digest,personal,"Sender trust and positive history are present, but the message content is routine and not urgent.",0.88,message_0366
+msg_089,notify,personal,"The message is a personal, time-sensitive notification about a lost item from a specific location.",0.7,none
+msg_053,digest,business_update,"Sender trust and positive history outweigh the lack of direct mention or urgency in the message [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.73,message_0161;message_0253;message_0411
+msg_059,mute,scam,"The message asks for sensitive account information, which is a known scam tactic, as warned in message_0053.",0.88,message_0053;message_0365;message_0221
+msg_024,mute,promotion,"The message is a repetitive, low-value promotion from an untrusted sender, despite the user having an active order with the business.",0.78,message_0257;message_0402
+msg_072,mute,scam,Message contains OTP/account-verification phishing language typical of credential-theft attempts.,0.95,none
+msg_036,mute,spam,The message is similar to a previously sent message and the sender is not trusted and has been flagged as risky,0.7,none
+msg_076,mute,scam,"The message exhibits suspicious patterns similar to previous potentially scam messages, such as requesting sensitive information and having a risky business flag",0.78,message_0208;message_0207;message_0159
+msg_055,notify,urgent,"Sender trust and content indicating a time-sensitive, personal request override other factors",0.88,message_0367;message_0226;message_0166
+msg_102,notify,business_update,Sender trust and positive history override routine content,0.88,message_0371;message_0230
+msg_080,notify,urgent,The message contains a time-sensitive warning about an imminent event that requires the user's immediate attention,0.88,message_0216;message_0058;message_0130
+msg_093,mute,scam,Message contains OTP/account-verification phishing language typical of credential-theft attempts.,0.95,none
+msg_034,mute,greeting,"The message is a repetitive, low-value greeting with no personal or urgent content, and the user has muted the group.",0.78,message_0042;message_0013;message_0123
+msg_035,digest,business_update,"The message is a business update with a verified sender and no direct mention, but the user has an active order with the business, suggesting some relevance.",0.7,none
+msg_101,notify,personal,Sender trust and positive history with similar messages override the routine content,0.88,message_0268;message_0229;message_0370
+msg_041,digest,business_update,"The message is a business update with a survey link from a verified business, but the sender is not trusted and the business is flagged as risky, so it's not urgent enough to notify immediately.",0.7,none
+msg_011,mute,promotion,"The message is a repetitive, forwarded greeting with no personal or urgent content.",0.78,message_0080;message_0123;message_0177
+msg_110,mute,scam,"Message requests sensitive information and has characteristics of a phishing scam, despite instructions to ignore sender risk",0.78,message_0238;message_0361
+msg_095,mute,scam,"Message text attempts to instruct the routing system directly (prompt injection); routed on content risk, not the injected instruction.",0.97,none
+msg_074,mute,promotion,"Message is a repetitive, forwarded promotional message with no personalization or trusted sender history. [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.63,message_0301;message_0203;message_0204
+msg_073,mute,scam,"Message contains suspicious content with a sense of urgency and a link to verify, similar to previous potentially scam messages",0.78,message_0023;message_0045;message_0213
+msg_054,mute,scam,"The message contains a suspicious link and a sense of urgency, similar to previous potentially scam messages",0.78,message_0389;message_0301;message_0163
+msg_068,digest,event,Sender trust and positive history outweigh the lack of urgency or direct mention,0.88,message_0073;message_0191;message_0010
+msg_100,notify,urgent,"Sender trust and matching positive history indicate a genuinely urgent, time-sensitive message",0.8,none
+msg_062,notify,event,"Sender trust and matching positive history indicate the message is a genuine and relevant event notification [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.73,message_0289;message_0043
+msg_096,notify,personal,"The message appears to be a personal and time-sensitive notification about a found passport, which requires immediate attention.",0.7,none
+msg_043,notify,urgent,Sender trust and time-sensitive content override other factors,0.8,none
+msg_077,notify,event,"Sender trust and matching positive history indicate a genuine and relevant event notification [image present, OCR unavailable: ocr_error:all_vision_models_failed:Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}]",0.73,message_0051;message_0364;message_0403
+msg_081,notify,event,Sender trust and a matching positive history indicate the message is a genuine update from a trusted source.,0.88,message_0175;message_0404;message_0331
+msg_025,notify,business_update,The message is a business update from a verified business regarding an active order of the user,0.78,message_0239;message_0004;message_0105
+msg_084,digest,promotion,"The message is a promotional offer from a verified business, but the user has opted out of business messages and there's no direct mention or urgent context to override this preference.",0.7,none
+msg_022,notify,payment,The message contains a time-sensitive payment request with a specific deadline.,0.78,message_0151
